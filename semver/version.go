@@ -213,7 +213,7 @@ func (v Version) String() string {
 	}
 	if len(v.Build) > 0 {
 		b.WriteByte('+')
-		b.WriteString(strings.Join(v.Build, "-"))
+		b.WriteString(strings.Join(v.Build, "."))
 	}
 	return b.String()
 }
